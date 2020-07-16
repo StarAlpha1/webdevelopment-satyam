@@ -7,13 +7,14 @@
     box-sizing: border-box;
 }
 
-html
+html,body
 {
     background-color: white;
     color: rgb(54, 54, 54);
     font-family: 'lato','aerial',sans-serif;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 /**--------------------reusable component-----------**/
@@ -242,6 +243,22 @@ header
     margin-top: 20px;
 
 }
+.logo-black
+{
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+
+}
+.logo-black
+{
+    display: none;
+}
+
+
+/**main navigation------**/
+
 .main-nav
 {
     float:  right;
@@ -272,6 +289,32 @@ header
     border-bottom: 2px solid #e67e22;
 }
 
+.sticky .logo-black {display: block;}
+.sticky .logo {display: none;}
+
+/**---------sticky navigation------**/
+
+.sticky 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:rgb(255, 255, 255);
+    box-shadow: 0 2px 2px;
+    z-index: 99999;
+}
+.main-nav
+{
+    margin-top: 18px;
+}
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited
+{
+    padding: 16px 0;
+    color:#555;
+     
+}
 
 /**----------  featuress---------------------------
 ------------------------------------**/
